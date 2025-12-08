@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="bg-primary text-white p-4 mb-4">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Dashboard Information</h1>
+            <p class="">Ini merupakan data summary dari aplikasi</p>
+        </div>
+    </header>
+    <div class="container">
+        <section class="mb-5">
+            <h2 class="h3 fw-bold text-uppercase">status system</h2>
+            <p class="text-muted">Berikut adalah ringkasan status system pada aplikasi anda hari ini</p>
+            <div class="alert alert-info">
+                <strong class="text-primary">Note : </strong>Semua data di perbaharui 
+                <span class="fw-bold">Setiap 5 menit sekali</span>
+            </div>
+        </section>
+        <section class="mb-5">
+           <h4 class="h4">Ringkasan hari ini</h4>
+           <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h4 class="fs-5n fw-bold text-success">150 pengguna aktif</h4>
+                        <p class="text-muted">Jumlah user yang login hari ini</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h4>34 order pending</h4>
+                    </div>
+                </div>
+           </div> 
+        </section>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
