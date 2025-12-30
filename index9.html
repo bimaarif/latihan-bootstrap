@@ -31,14 +31,53 @@
                             <td>Dr budi spd</td>
                             <td>Non racikan</td>
                             <td>
-                                <button class="btn btn-primary"><i class="fas fa-info-circle"></i> Rincian</button>
+                                <!-- <button class="btn btn-primary"><i class="fas fa-info-circle"></i> Rincian</button>
                                 <button class="btn btn-warning"><i class="fas fa-pencil"></i> Edit</button>
                                 <button class="btn btn-danger"><i class="fas fa-trash"></i> Hapus</button>
-                                <button class="btn btn-light">Berkas RME Pasien UGD</button>
+                                <button class="btn btn-light text-nowrap"><i class="fas fa-folder"></i> Berkas RME Pasien UGD</button>
+                                <a href="test.html" class="btn btn-success" role="button"><i class="fas fa-file"></i>
+                                    pembayaran
+                                </a>
+                                <button class="btn btn-outline-danger">batal</button>
+                                <button class="btn btn-info btn-lg">selesai</button>
+                                <button class="btn btn-dark btn-sm">tutup</button>
+                                <button class="btn btn-primary"
+                                 style="--bs-btn-padding-y:.100rem; --bs-btn-padding-x:.2rem;"
+                                ><i class="fas fa-print"></i></button> -->
+                                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Aksi
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#"><i class="fas fa-info-circle"></i>detail</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fas fa-pencil"></i>Edit</a></li>
+                                            <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-trash"></i>Hapus</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </td>
+
                         </tr>
                     </tbody>
                 </table>
+                <hr>
+                <h1>Form Permintaan Resep</h1>
+                <form action="">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-label">Resep</div>
+                            <input type="text" class="form-control">
+                        </div>
+                        
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                         <button class="btn btn-primary" disabled>Simpan</button>
+                         <button class="btn btn-warning" >clear</button>
+                    </div>
+                </form>
             </div>
         </div>
       </div>
