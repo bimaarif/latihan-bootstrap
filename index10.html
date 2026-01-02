@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+     <div class="container">
+        <h3 class="fw-bold mb-4">
+            dashboard SIMRS
+            <small class="text-muted fs-6 d-block">Ringkasan Operasiaonal hari ini</small>
+        </h3>
+
+        <div class="row g-3 mb-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <div class="text-muted">Pasien Hari Ini</div>
+                            <div class="fs-3 fw-bold">70</div>
+                        </div>
+                        <i class="fas fa-users fs-1 text-primary"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <div class="text-muted">Bed tersedia</div>
+                            <div class="fs-3 fw-bold">12</div>
+                        </div>
+                        <i class="fas fa-bed fs-1 text-success"></i>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-lg-3 col-md-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <div class="text-muted">Dokter bertugas</div>
+                            <div class="fs-3 fw-bold">6</div>
+                        </div>
+                        <i class="fas fa-user fs-1 text-danger"></i>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-lg-3 col-md-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <div class="text-muted">Resep proses</div>
+                            <div class="fs-3 fw-bold">40</div>
+                        </div>
+                        <i class="fas fa-pills fs-1 text-warning"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h5 class="fw-bold mb-3">Layanan Rumah Sakit</h5>
+        <div class="row mb-4 g-3">
+            <div class="col-md-3 col-6">
+                <div class="card text-center shadow-sm">
+                    <div class="card-body">
+                        <i class="bi bi-clipboard-plus text-primary fs-1"></i>
+                        <h6 class="mt-6">Poliklinik</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="card text-center shadow-sm">
+                    <div class="card-body">
+                        <i class="bi bi-lightning-charge text-danger fs-1"></i>
+                        <h6 class="mt-6">Informasi IGD</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="card text-center shadow-sm">
+                    <div class="card-body">
+                        <i class="bi bi-eyedropper text-success fs-1"></i>
+                        <h6 class="mt-6">laboratorium</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="card text-center shadow-sm">
+                    <div class="card-body">
+                        <i class="bi bi-bag-plus text-warning fs-1"></i>
+                        <h6 class="mt-6">Farmasi</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h5 class="fw-bold mb-3">Dokter bertugas</h5>
+        <div class="card">
+           <div class="d-flex flex-column flex-md-row gap-3 align-items-center align-item-md-start">
+                <div class="card-body">
+                    <div class="flex-shrink-0">
+                        <img src="avatar.jpg" class="img-fluid rounded-circle mx-auto d-block" alt="" style="width: 100px;">
+                    </div>
+                    <div class="text-center text-md-start">
+                        <h5>dr. Andi Syahputra, Sp. PD</h5>
+                        <div class="text-muted">spesialis penyakit dalam</div>
+                        <div class="mb-2 text-danger fw-bold">08.00 - 10.00</div>
+                        <span class="badge bg-success">online</span>
+                    </div>
+                </div>
+           </div>
+        </div>
+
+        <h5 class="fw-bold mb-3">Status ruangan</h5>
+        <div class="card">
+            <div class="card-header">
+                <h6 class="fw-bold">Ruangan hari ini</h6>
+            </div>
+            <div class="card-body shadow-sm h-100">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">ICU
+                        <span class="badge bg-danger">penuh</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Isolasi
+                        <span class="badge bg-warning">sisa 2</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Vvip
+                        <span class="badge bg-success">tersedia</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-footer text-center">
+                <span class="text-muted fs-6">Update terakhir: 5 menit yang lalu</span>
+            </div>
+        </div>
+        <h5 class="fw-bold mt-4">Status Pasien CITO</h5>
+     </div>
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
